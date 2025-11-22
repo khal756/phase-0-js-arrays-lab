@@ -1,6 +1,29 @@
-// Write your code here
+// Product Inventory
+let products = ["Laptop", "Phone", "Headphones", "Monitor"];
 
+// Access Product Information
+function logFirstProduct() {
+  console.log(products[0]);
+}
 
+// Add a Product
+function addProduct(productName) {
+  products.push(productName);
+}
+
+// Update Product Information
+function updateProductName(index, newName) {
+  if (index >= 0 && index < products.length) {
+    products[index] = newName;
+  } else {
+    console.log("Invalid index");
+  }
+}
+
+// Remove a Product
+function removeLastProduct() {
+  products.pop();
+}
 
 // Export the necessary parts for testing
 module.exports = {
